@@ -32,7 +32,6 @@ class TransactionController extends Controller
     {
         DB::beginTransaction();
         try{
-
             $data = $request->validate([
                 'transaction_id' => 'required',
                 'transaction_type' => 'required',
